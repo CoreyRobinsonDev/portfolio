@@ -7,7 +7,7 @@ const Wrapper = styled.a`
   flex-direction: column;
   justify-content: space-between;
   color: black;
-  width: 40rem;
+  width: 50rem;
   margin: 2rem;
   padding: 1.5rem;
   background: white;
@@ -17,6 +17,10 @@ const Wrapper = styled.a`
    &:hover {
     position: relative;
     bottom: 1rem;
+  }
+
+  @media only screen and (max-width: 800px) {
+    width: 90vw;
   }
 `
 const Image = styled.img`

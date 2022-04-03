@@ -10,7 +10,7 @@ const Head = styled.header`
   color: white;
   font-size: 2rem;
 `
-const Link1 = styled.a`
+const List = styled.a`
   display: flex;
   color: white;
   padding: 10px;
@@ -19,6 +19,17 @@ const Link1 = styled.a`
     position: relative;
     left: 1rem;
     color: var(--complimentary-color);  
+  }
+`
+const LinkName = styled.div` 
+  color: white;
+
+  &:hover {
+    color: var(--complimentary-color);  
+  }
+
+  @media only screen and (max-width: 800px) {
+    display: none;
   }
 `
 const Link2 = styled.a`
@@ -44,8 +55,8 @@ const Title = styled.span`
 const Header = () => {
   return <Head>
     <ul>
-      <li><Link1 href='' target='_blank'><AiFillGithub></AiFillGithub>Github</Link1></li>
-      <li><Link1 href='' target='_blank'><AiFillLinkedin></AiFillLinkedin>Linkedin</Link1></li>
+      <List href='' target='_blank'><AiFillGithub></AiFillGithub><LinkName>GitHub</LinkName></List>
+      <List href='' target='_blank'><AiFillLinkedin></AiFillLinkedin><LinkName>Linkedin</LinkName></List>
     </ul>
     <NameContainer>
       <Hi>Hi, I'm</Hi>

@@ -11,7 +11,8 @@ const App = () => {
     <Global styles={css`
       @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
       html {  
-        box-sizing: border-box;   
+        box-sizing: border-box;
+        width: 100%;   
         font-size: 100%;
         font-family: 'Nanum Gothic', sans-serif;
         user-select: none;

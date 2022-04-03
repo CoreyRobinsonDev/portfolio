@@ -46,6 +46,14 @@ const Projects = () => {
       tools={['React', 'Redux', 'CSS']}
       linkToGithub={'https://github.com/CoreyRobinsonDev/mars-gallery'}
       linkToSite={'https://mars-gallery.netlify.app/'}
+      />
+      <Project
+      img={'photos/Screenshot (18).png'}
+      name={'Portfolio Site'}
+      description={"A simple portfolio site."}
+      tools={['React', 'Emotion']}
+      linkToGithub={'https://github.com/CoreyRobinsonDev/portfolio'}
+      linkToSite={'https://corey-robinson.netlify.app/'}
     />
     </ProjectWrapper>
     
