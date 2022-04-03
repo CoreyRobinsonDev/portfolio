@@ -23,7 +23,7 @@ const Form = styled.form`
   margin: 5rem;
 `
 const Input = styled.input`
-  width: 30rem;
+  width: 30vw;
   
   &:focus {
     outline: none;

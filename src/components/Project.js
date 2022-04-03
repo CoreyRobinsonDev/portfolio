@@ -35,6 +35,7 @@ const Title = styled.h4`
 `
 const Footer = styled.div`
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   justify-content: space-between;
   align-items: center;
