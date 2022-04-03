@@ -24,7 +24,7 @@ const Image = styled.img`
   height: 22rem;
   object-fit: cover;
 `
-const Title = styled.h3`
+const Title = styled.h4`
   font-size: 2rem;
   border-bottom: 1px solid;
   margin-bottom: .5rem;
