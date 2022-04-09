@@ -1,6 +1,4 @@
 import styled from "@emotion/styled";
-import {BsArrowUpShort} from 'react-icons/bs'
-
 
 const Footer = styled.section`
   display: flex;
