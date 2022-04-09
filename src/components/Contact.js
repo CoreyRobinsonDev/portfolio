@@ -1,4 +1,6 @@
 import styled from "@emotion/styled";
+import {BsArrowUpShort} from 'react-icons/bs'
+import {useState} from 'react';
 
 const Footer = styled.section`
   display: flex;
@@ -45,12 +47,47 @@ const Label = styled.label`
 const H3 = styled.h3`
   font-size: 1.3rem;
   font-weight: normal;
-  `
-
+`
+const Button = styled.button`
+  background: var(--primary-color);
+`
+const SubmitWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30vw;
+  height: 8rem;
+  background: white;
+  margin: 4rem 0;
+  padding: 1rem;
+  border-radius: 10px;
+`
+const H4 = styled.h4`
+  color: var(--complimentary-color);
+`
+const SubmitButton = styled.a`
+  display: flex;
+  align-items: center;
+  color: var(--primary-color);
+  font-weight: bold; 
+`
 const Contact = () => {
+  const [isSubmit, setIsSubmit] = useState(false);
+
+  const handleSubmit = () => {
+    setIsSubmit(true);
+  }
   return <Footer id="contact">
     <Title>Contact Me</Title>
-    <Form name="contact" method='POST' data-netlify='true'>
+    {
+      isSubmit
+        ? <SubmitWrapper>
+          <H4>Thank You!</H4>
+          <p>Your form submission has been recieved.</p>
+          <SubmitButton href='#head'><BsArrowUpShort></BsArrowUpShort>Back to top </SubmitButton>
+        </SubmitWrapper>
+        : <>
+        <Form name="contact" method='POST' data-netlify='true'>
       <input type='hidden' name='form-name' value='contact'></input>
       <Label>
         <H3>Name</H3>
@@ -65,8 +102,10 @@ const Contact = () => {
         <H3>Message</H3>
         <Message name='message' />
       </Label>
-      <button type='submit'>Send</button>
+      <Button type='submit' onClick={handleSubmit}>Send</Button>
     </Form>
+        </>
+    }
   </Footer>
 }
 export default Contact;

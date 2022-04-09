@@ -16,7 +16,6 @@ const App = () => {
         width: 100%;   
         font-size: 100%;
         font-family: 'Nanum Gothic', sans-serif;
-        user-select: none;
       }
       *, *:before, *:after {  
         box-sizing: inherit; 
