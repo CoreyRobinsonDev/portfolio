@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import {BsArrowUpShort} from 'react-icons/bs'
-import {useState} from 'react';
+
 
 const Footer = styled.section`
   display: flex;
@@ -72,11 +72,7 @@ const SubmitButton = styled.a`
   font-weight: bold; 
 `
 const Contact = () => {
-  const [isSubmit, setIsSubmit] = useState(false);
-
-  const handleSubmit = () => {
-    setIsSubmit(true);
-  }
+  const isSubmit = false
   return <Footer id="contact">
     <Title>Contact Me</Title>
     {
@@ -87,7 +83,7 @@ const Contact = () => {
           <SubmitButton href='#head'><BsArrowUpShort></BsArrowUpShort>Back to top </SubmitButton>
         </SubmitWrapper>
         : <>
-        <Form name="contact" method='POST' data-netlify='true' onSubmit={handleSubmit}>
+        <Form name="contact" method='POST' data-netlify='true' >
       <input type='hidden' name='form-name' value='contact'></input>
       <Label>
         <H3>Name</H3>
