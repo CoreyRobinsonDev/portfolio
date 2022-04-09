@@ -33,11 +33,11 @@ const Input = styled.input`
 const Contact = () => {
   return <Footer id="contact">
     <Title>Contact Me</Title>
-    <Form>
+    <Form name="contact" method='POST' data-netlify='true' onSubmit='submit'>
       <h3>Name:</h3>
-      <Input />
+      <Input type='text' name='name' />
       <h3>Email:</h3>
-      <Input />
+      <Input type='email' name='email' />
       <h3>Message:</h3>
       <Input />
     </Form>

@@ -53,7 +53,7 @@ const Projects = () => {
       description={"A simple portfolio site."}
       tools={['React', 'Emotion']}
       linkToGithub={'https://github.com/CoreyRobinsonDev/portfolio'}
-      linkToSite={'https://corey-robinson.netlify.app/'}
+      linkToSite={'https://corey-robinson.dev/'}
     />
     </ProjectWrapper>
     

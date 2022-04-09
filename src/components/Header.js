@@ -55,8 +55,8 @@ const Title = styled.span`
 const Header = () => {
   return <Head>
     <ul>
-      <List href='' target='_blank'><AiFillGithub></AiFillGithub><LinkName>GitHub</LinkName></List>
-      <List href='' target='_blank'><AiFillLinkedin></AiFillLinkedin><LinkName>Linkedin</LinkName></List>
+      <List href='https://github.com/CoreyRobinsonDev?tab=repositories' target='_blank'><AiFillGithub></AiFillGithub><LinkName>GitHub</LinkName></List>
+      <List href='https://www.linkedin.com/in/corey-robinson-583787236/' target='_blank'><AiFillLinkedin></AiFillLinkedin><LinkName>Linkedin</LinkName></List>
     </ul>
     <NameContainer>
       <Hi>Hi, I'm</Hi>
