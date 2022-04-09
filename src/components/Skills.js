@@ -17,6 +17,7 @@ const Title = styled.h2`
 `
 const ImageContainer = styled.div`
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   padding: 5rem 30rem;
 `

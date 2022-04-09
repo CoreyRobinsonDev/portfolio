@@ -25,6 +25,22 @@
     <title>Corey Robinson</title>
   </head>
   <body>
+    <form name="contact" netlify netlify-honeypot="bot-field" action="/" hidden>
+      <label>
+        <h3>Name</H3>
+        <input type='text' name='name' />
+      </label>
+      
+      <label>
+        <h3>Email</H3>
+      <input type='email' name='email' />
+      </label>
+      <label>
+        <h3>Message</H3>
+        <textarea name='message' ></textarea>
+      </label>
+      <button type='submit'>Send</button>
+    </form>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
