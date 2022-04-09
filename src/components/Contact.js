@@ -50,22 +50,26 @@ const H3 = styled.h3`
 const Contact = () => {
   return <Footer id="contact">
     <Title>Contact Me</Title>
-    <Form name="contact" method='POST' data-netlify='true' onSubmit='submit'>
-      <Label>
-        <H3>Name</H3>
-        <Input type='text' name='name' />
-      </Label>
-      
-      <Label>
-        <H3>Email</H3>
-      <Input type='email' name='email' />
-      </Label>
-      <Label>
-        <H3>Message</H3>
-        <Message name='message' />
-      </Label>
-      <button type='submit'>Send</button>
-    </Form>
+    <form name="contact" method="POST" data-netlify="true">
+  <p>
+    <label>Your Name: <input type="text" name="name" /></label>
+  </p>
+  <p>
+    <label>Your Email: <input type="email" name="email" /></label>
+  </p>
+  <p>
+    <label>Your Role: <select name="role[]" multiple>
+      <option value="leader">Leader</option>
+      <option value="follower">Follower</option>
+    </select></label>
+  </p>
+  <p>
+    <label>Message: <textarea name="message"></textarea></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
   </Footer>
 }
 export default Contact;
