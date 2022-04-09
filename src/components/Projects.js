@@ -37,7 +37,7 @@ const Projects = () => {
       description={"This web app helps users understand a given chess opening when played."}
       tools={['React', 'Redux', 'CSS']}
       linkToGithub={'https://github.com/CoreyRobinsonDev/chess'}
-      linkToSite={'https://mars-gallery.netlify.app/'}
+      linkToSite={'https://corey-robinson.dev/'}
     />
     <Project
       img={'photos/Screenshot (15).png'}
@@ -45,7 +45,7 @@ const Projects = () => {
       description={"A minimalistic take on the popular social media site Reddit, utilizing their api."}
       tools={['React', 'Redux', 'CSS']}
       linkToGithub={'https://github.com/CoreyRobinsonDev/mars-gallery'}
-      linkToSite={'https://mars-gallery.netlify.app/'}
+      linkToSite={'https://redditminimal-crd.netlify.app/'}
       />
       <Project
       img={'photos/Screenshot (18).png'}
