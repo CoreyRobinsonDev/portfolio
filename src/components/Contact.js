@@ -24,22 +24,47 @@ const Form = styled.form`
 `
 const Input = styled.input`
   width: 30vw;
+  font-size: 1rem;
   
   &:focus {
     outline: none;
   }
 `
+const Message = styled.textarea`
+  width: 30vw;
+  height: 6rem;
+  
+  &:focus {
+    outline: none;
+  }
+`
+const Label = styled.label`
+  display: flex;
+  flex-direction: column;
+`
+const H3 = styled.h3`
+  font-size: 1.3rem;
+  font-weight: normal;
+  `
 
 const Contact = () => {
   return <Footer id="contact">
     <Title>Contact Me</Title>
     <Form name="contact" method='POST' data-netlify='true' onSubmit='submit'>
-      <h3>Name:</h3>
-      <Input type='text' name='name' />
-      <h3>Email:</h3>
+      <Label>
+        <H3>Name</H3>
+        <Input type='text' name='name' />
+      </Label>
+      
+      <Label>
+        <H3>Email</H3>
       <Input type='email' name='email' />
-      <h3>Message:</h3>
-      <Input />
+      </Label>
+      <Label>
+        <H3>Message</H3>
+        <Message name='message' />
+      </Label>
+      <button type='submit'>Send</button>
     </Form>
   </Footer>
 }
