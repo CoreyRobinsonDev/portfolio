@@ -51,39 +51,11 @@ const H3 = styled.h3`
 const Button = styled.button`
   background: var(--primary-color);
 `
-const SubmitWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30vw;
-  height: 8rem;
-  background: white;
-  margin: 4rem 0;
-  padding: 1rem;
-  border-radius: 10px;
-`
-const H4 = styled.h4`
-  color: var(--complimentary-color);
-`
-const SubmitButton = styled.a`
-  display: flex;
-  align-items: center;
-  color: var(--primary-color);
-  font-weight: bold; 
-`
+
 const Contact = () => {
-  const isSubmit = false
   return <Footer id="contact">
     <Title>Contact Me</Title>
-    {
-      isSubmit
-        ? <SubmitWrapper>
-          <H4>Thank You!</H4>
-          <p>Your form submission has been recieved.</p>
-          <SubmitButton href='#head'><BsArrowUpShort></BsArrowUpShort>Back to top </SubmitButton>
-        </SubmitWrapper>
-        : <>
-        <Form name="contact" method='POST' data-netlify='true' >
+    <Form name="contact" method='POST' data-netlify='true' >
       <input type='hidden' name='form-name' value='contact'></input>
       <Label>
         <H3>Name</H3>
@@ -99,9 +71,7 @@ const Contact = () => {
         <Message name='message' />
       </Label>
       <Button type='submit'>Send</Button>
-    </Form>
-        </>
-    }
+    </Form> 
   </Footer>
 }
 export default Contact;
