@@ -15,37 +15,7 @@ const Title = styled.h2`
   border-bottom: 1px solid;
   margin-bottom: 1rem;
 `
-const Form = styled.form`
-  display: flex;
-  flex-direction: column;
-  color: white;
-  font-size: 1.5rem;
-  margin: 5rem;
-`
-const Input = styled.input`
-  width: 30vw;
-  font-size: 1rem;
-  
-  &:focus {
-    outline: none;
-  }
-`
-const Message = styled.textarea`
-  width: 30vw;
-  height: 6rem;
-  
-  &:focus {
-    outline: none;
-  }
-`
-const Label = styled.label`
-  display: flex;
-  flex-direction: column;
-`
-const H3 = styled.h3`
-  font-size: 1.3rem;
-  font-weight: normal;
-  `
+
 
 const Contact = () => {
   return <Footer id="contact">
