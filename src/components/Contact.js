@@ -50,7 +50,7 @@ const H3 = styled.h3`
 const Contact = () => {
   return <Footer id="contact">
     <Title>Contact Me</Title>
-    <Form name="contact" method='POST' data-netlify='true' onSubmit='submit'>
+    <Form name="contact" method='POST' data-netlify='true'>
       <input type='hidden' name='form-name' value='contact'></input>
       <Label>
         <H3>Name</H3>
