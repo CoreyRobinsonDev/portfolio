@@ -87,7 +87,7 @@ const Contact = () => {
           <SubmitButton href='#head'><BsArrowUpShort></BsArrowUpShort>Back to top </SubmitButton>
         </SubmitWrapper>
         : <>
-        <Form name="contact" method='POST' data-netlify='true'>
+        <Form name="contact" method='POST' data-netlify='true' onSubmit={handleSubmit}>
       <input type='hidden' name='form-name' value='contact'></input>
       <Label>
         <H3>Name</H3>
@@ -102,7 +102,7 @@ const Contact = () => {
         <H3>Message</H3>
         <Message name='message' />
       </Label>
-      <Button type='submit' onClick={handleSubmit}>Send</Button>
+      <Button type='submit'>Send</Button>
     </Form>
         </>
     }
