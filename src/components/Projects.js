@@ -43,8 +43,8 @@ const Projects = () => {
       img={'photos/Screenshot (15).png'}
       name={'Reddit Minimal'}
       description={"A minimalistic take on the popular social media site Reddit, utilizing their api."}
-      tools={['React', 'Redux', 'CSS']}
-      linkToGithub={'https://github.com/CoreyRobinsonDev/mars-gallery'}
+      tools={['React', 'Redux', 'jQuery','CSS']}
+      linkToGithub={'https://github.com/CoreyRobinsonDev/reddit-client'}
       linkToSite={'https://redditminimal-crd.netlify.app/'}
       />
       <Project
