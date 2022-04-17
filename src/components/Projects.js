@@ -24,20 +24,20 @@ const Projects = () => {
     <Title>Projects</Title>
     <ProjectWrapper>
       <Project
+      img={'photos/Screenshot (14).png'}
+      name={'Chess Openings'}
+      description={"This web app helps users understand a given chess opening when played."}
+      tools={['React', 'Redux', 'CSS']}
+      linkToGithub={'https://github.com/CoreyRobinsonDev/chess-openings'}
+      linkToSite={'https://chess-openings-crd.netlify.app/'}
+    />
+      <Project
       img={'photos/Screenshot (13).png'}
       name={'Mars Gallery'}
       description={"A simple web app for searching photos taken on Mars using NASA's Mars Rover Photos api."}
       tools={['React', 'TypeScript', 'Emotion']}
       linkToGithub={'https://github.com/CoreyRobinsonDev/mars-gallery'}
       linkToSite={'https://mars-gallery.netlify.app/'}
-    />
-    <Project
-      img={'photos/Screenshot (14).png'}
-      name={'Chess Openings'}
-      description={"This web app helps users understand a given chess opening when played."}
-      tools={['React', 'Redux', 'CSS']}
-      linkToGithub={'https://github.com/CoreyRobinsonDev/chess'}
-      linkToSite={'https://corey-robinson.dev/'}
     />
     <Project
       img={'photos/Screenshot (15).png'}
