@@ -18,12 +18,14 @@ const Title = styled.h2`
 const Form = styled.form`
   display: flex;
   flex-direction: column;
-  color: white;
+  background: var(--secondary-color);
+  color: black;
   font-size: 1.5rem;
-  margin: 5rem;
+  margin: 2rem;
+  padding: 1rem;
 `
 const Input = styled.input`
-  width: 30vw;
+  width: 50vw;
   font-size: 1rem;
   
   &:focus {
@@ -31,7 +33,7 @@ const Input = styled.input`
   }
 `
 const Message = styled.textarea`
-  width: 30vw;
+  width: 50vw;
   height: 6rem;
   
   &:focus {
@@ -47,12 +49,13 @@ const H3 = styled.h3`
   font-weight: normal;
 `
 const Button = styled.button`
+  color: white;
   background: var(--primary-color);
 `
 
 const Contact = () => {
   return <Footer id="contact">
-    <Title>Contact Me</Title>
+    <Title>Contact</Title>
     <Form name="contact" method='POST' data-netlify='true' >
       <input type='hidden' name='form-name' value='contact'></input>
       <Label>

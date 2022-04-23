@@ -8,23 +8,19 @@ const Wrapper = styled.a`
   justify-content: space-between;
   color: black;
   width: 50rem;
+  height: 33rem;
   margin: 2rem;
   padding: 1.5rem;
   background: white;
-  border-radius: 10px;
   box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1),0 4px 6px -2px rgba(0,0,0,0.05);
-
-   &:hover {
-    position: relative;
-    bottom: 1rem;
-  }
 
   @media only screen and (max-width: 800px) {
     width: 90vw;
+    margin: 2rem 0;
+    width: 100vw;    
   }
 `
 const Image = styled.img`
-  border-radius: 10px;
   height: 22rem;
   object-fit: cover;
 `
@@ -59,17 +55,35 @@ const List = styled.li`
   padding: 5px 10px;
   border-radius: 10px;
 `
+const ProjectBackground = styled.div`
+  position: relative;
+  top: 36rem;
+  left: 1rem;
+  z-index: -1;
+  background: var(--complimentary-color);
+  width: 50rem;
+  height: 33rem;
+  margin-top: -33rem;
+  margin-right: -5rem;
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1),0 4px 6px -2px rgba(0,0,0,0.05);
+  @media only screen and (max-width: 800px) {
+   display: none;   
+  }
+`
 
 const Project = ({ img, name, description, tools, linkToGithub, linkToSite }) => {
-  return <Wrapper href={linkToSite} target='_blank'>
-    <Image src={img} alt='' />
-    <Title>{name}</Title>
-    <p>{description}</p>
-    <Footer>
-      {tools.map(tool => <List className={tool}>{tool}</List>)}
-      <Link href={linkToGithub} target='_blank'><AiFillGithub></AiFillGithub>Code</Link>
-      <Link href={linkToSite} target='_blank'><FaExternalLinkAlt></FaExternalLinkAlt>Visit</Link>
-    </Footer>
-  </Wrapper>
+  return <div>
+    <ProjectBackground/>
+    <Wrapper href={linkToSite} target='_blank'>
+      <Image src={img} alt='' />
+      <Title>{name}</Title>
+      <p>{description}</p>
+      <Footer>
+        {tools.map(tool => <List className={tool}>{tool}</List>)}
+        <Link href={linkToGithub} target='_blank'><AiFillGithub></AiFillGithub>Code</Link>
+        <Link href={linkToSite} target='_blank'><FaExternalLinkAlt></FaExternalLinkAlt>Visit</Link>
+      </Footer>
+    </Wrapper>
+  </div>
 }
 export default Project;

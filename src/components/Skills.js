@@ -19,7 +19,11 @@ const ImageContainer = styled.div`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 5rem 30rem;
+  padding: 0 30rem;
+
+  @media only screen and (max-width: 800px) {
+    padding: 5rem;
+  }
 `
 const Image = styled.img`
   width: 100px;
