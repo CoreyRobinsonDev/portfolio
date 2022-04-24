@@ -61,6 +61,9 @@ const NameContainerBackground = styled.div`
   @media only screen and (max-width: 800px) {
     display: none;
   }
+  @media only screen and (min-width: 3000px) {
+    left: 40vw;
+  }
 `
 const Hi = styled.span`
   color: var(--secondary-color);

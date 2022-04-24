@@ -31,7 +31,7 @@ const Projects = () => {
     <Title>Projects</Title>
     <ProjectWrapper>
       <Project
-        img={'photos/Screenshot (14).png'}
+        gif={'gifs/ezgif.com-gif-maker (2).gif'}
         name={'Chess Openings'}
         description={"This web app helps users understand a given chess opening when played."}
         tools={['React', 'Redux', 'CSS']}
@@ -39,7 +39,7 @@ const Projects = () => {
         linkToSite={'https://chess-openings-crd.netlify.app/'}
      />
       <Project
-        img={'photos/Screenshot (13).png'}
+        gif={'gifs/ezgif.com-gif-maker.gif'}
         name={'Mars Gallery'}
         description={"A simple web app for searching photos taken on Mars using NASA's Mars Rover Photos api."}
         tools={['React', 'TypeScript', 'Emotion']}
@@ -47,7 +47,7 @@ const Projects = () => {
         linkToSite={'https://mars-gallery.netlify.app/'}
       />
       <Project
-        img={'photos/Screenshot (15).png'}
+        gif={'gifs/ezgif.com-gif-maker (1).gif'}
         name={'Reddit Minimal'}
         description={"A minimalistic take on the popular social media site Reddit, utilizing their api."}
         tools={['React', 'Redux', 'jQuery','CSS']}
@@ -55,7 +55,7 @@ const Projects = () => {
         linkToSite={'https://redditminimal-crd.netlify.app/'}
       />
       <Project
-        img={'photos/Screenshot (18).png'}
+        gif={'gifs/ezgif.com-gif-maker (3).gif'}
         name={'Portfolio Site'}
         description={"A simple portfolio site."}
         tools={['React', 'Emotion']}

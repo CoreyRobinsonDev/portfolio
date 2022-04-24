@@ -20,7 +20,7 @@ const Wrapper = styled.a`
     width: 100vw;    
   }
 `
-const Image = styled.img`
+const Gif = styled.embed`
   height: 22rem;
   object-fit: cover;
 `
@@ -72,11 +72,11 @@ const ProjectBackground = styled.div`
   }
 `
 
-const Project = ({ img, name, description, tools, linkToGithub, linkToSite }) => {
+const Project = ({ gif, name, description, tools, linkToGithub, linkToSite }) => {
   return <div>
     <ProjectBackground/>
     <Wrapper href={linkToSite} target='_blank'>
-      <Image src={img} alt='' />
+      <Gif src={gif} />
       <Title>{name}</Title>
       <p>{description}</p>
       <Footer>
