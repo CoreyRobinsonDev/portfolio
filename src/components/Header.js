@@ -36,7 +36,7 @@ const LinkName = styled.div`
     display: none;
   }
 `
-const Link2 = styled.a`
+const Link2 = styled.a` 
   display: flex;
   color: white;
   padding: 10px;

@@ -60,6 +60,7 @@ const ProjectBackground = styled.div`
   top: 36rem;
   left: 1rem;
   z-index: -1;
+  pointer-events: none;
   background: var(--complimentary-color);
   width: 50rem;
   height: 33rem;

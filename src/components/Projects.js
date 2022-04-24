@@ -8,7 +8,7 @@ const Wrapper = styled.section`
   align-items: center;
   padding: 1rem;
   background: var(--secondary-color);
-  z-index: -99;
+  z-index: 1;
 
   @media only screen and (max-width: 800px) {
     padding: 1rem 0;
