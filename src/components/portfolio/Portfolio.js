@@ -13,11 +13,11 @@ const Portfolio = ({style, changeComponent}) => {
       <h3 className='portfolio-title'>Portfolio</h3>
       <h1>Corey Robinson</h1>
       
-        <a  rel="noreferrer" href='https://github.com/CoreyRobinsonDev?tab=repositories' target='_blank'>=>GitHub</a>
-        <a rel="noreferrer" href='https://www.linkedin.com/in/corey-robinson-583787236/' target='_blank'>=>LinkedIn</a>
+        <a  rel="noreferrer" href='https://github.com/CoreyRobinsonDev?tab=repositories' target='_blank'>{'=>>'}GitHub</a>
+      <a rel="noreferrer" href='https://www.linkedin.com/in/corey-robinson-583787236/' target='_blank'>{'=>>'}LinkedIn</a>
     
       <div className='nav-container'>
-        <span>//////////////////////</span>
+        <span>{'///////////////////////'}</span>
         <div onClick={() => changeComponent(['/projects', '/chess-openings'],<Projects index={0} style={{}} changeComponent={()=>{}}></Projects> )} className='projects'>
           <h2>] Projects</h2>
         </div>
@@ -30,7 +30,7 @@ const Portfolio = ({style, changeComponent}) => {
         <div className='contact'>
           <h2 onClick={() => changeComponent(['/contact'], <Contact style={{}} changeComponent={() => { }}></Contact>)}>] Contact</h2>
         </div>
-        <span>//////////////////////</span>
+        <span>{'///////////////////////'}</span>
       </div>
     </div>
   </animated.section>

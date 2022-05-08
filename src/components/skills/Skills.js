@@ -12,34 +12,34 @@ const Skills = ({style, changeComponent}) => {
         <div className='frontend'>
           <h3>[ Front-End ]</h3>
           <ul>
-            <li>>React</li>
-            <li>>>>React-Router</li>
-            <li>>>>React-Spring</li>
-            <li>>Redux</li>
-            <li>>>>Redux-Toolkit</li>
-            <li>>JavaScript</li>
-            <li>>>>TypeScript</li>
-            <li>>jQuery</li>
-            <li>>Jest</li>
-            <li>>Emotion</li>
-            <li>>Styled Components</li>
-            <li>>HTML/CSS</li>
+            <li>{'>'}React</li>
+            <li>{'>>>'}React-Router</li>
+            <li>{'>>>'}React-Spring</li>
+            <li>{'>'}Redux</li>
+            <li>{'>>>'}Redux-Toolkit</li>
+            <li>{'>'}JavaScript</li>
+            <li>{'>>>'}TypeScript</li>
+            <li>{'>'}jQuery</li>
+            <li>{'>'}Jest</li>
+            <li>{'>'}Emotion</li>
+            <li>{'>'}Styled Components</li>
+            <li>{'>'}HTML/CSS</li>
           </ul>
         </div>
         <div className='backend'>
           <h3>[ Back-End ]</h3>
           <ul>
-            <li>>Nodejs</li>
-            <li>>>>Expressjs</li>
+            <li>{'>'}Nodejs</li>
+            <li>{'>'}Expressjs</li>
 
           </ul>
         </div>
         <div className='other-skills'>
           <h3>[ Dev ]</h3>
           <ul>
-            <li>>Git</li>
-            <li>>CLI</li>
-            <li>>TDD</li>
+            <li>{'>'}Git</li>
+            <li>{'>'}CLI</li>
+            <li>{'>'}TDD</li>
           </ul>
         </div>
       </div>

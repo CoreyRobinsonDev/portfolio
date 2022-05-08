@@ -26,15 +26,6 @@ const App = () => {
     },
   });
 
-  const changeComponent = ( newPath, value=null) => {
-    if (!newPath) {
-      setPath(['/portfolio']);
-    } else {
-      setPath([...path, ...newPath]);
-    }
-    if (value) setComponent(value);
-   
-  }
   
   const handleCommand = (e) => {
     e.preventDefault();
@@ -140,6 +131,15 @@ const App = () => {
   }
   //updates the component
   useEffect(() => {
+  const changeComponent = ( newPath, value=null) => {
+    if (!newPath) {
+      setPath(['/portfolio']);
+    } else {
+      setPath([...path, ...newPath]);
+    }
+    if (value) setComponent(value);
+   
+  }
     switch (path[path.length -1]) {
       case '/about':
         setIsVisible(false);
