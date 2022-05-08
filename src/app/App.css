@@ -1,29 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600&display=swap');
+html {  
+	box-sizing: border-box;   
+	font-size: 100%;
+  font-family: 'Fira Code', monospace;
+}
+*, *:before, *:after {  
+	box-sizing: inherit;
+	text-decoration: none;
+	margin: 0;  
+	padding: 0;
+}
+button {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+  margin: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+:root {
+  --parent-bg-color: #bf223c;
+  --text-color: #285d3d;
+  --bg-color: #fcf0f2;
+  --border-color: #276d9b;
+}
+li {
+  list-style-type: none;
+  font-size: 1.5rem;
+}
+
 .React {
-  background: rgba(97, 218, 251, 0.6);
-  border: 1px solid rgb(97, 218, 251);
+  color: rgba(97, 218, 251);
 }
 
 .TypeScript {
-  background: rgba(0, 122, 204, 0.6);
-  border: 1px solid rgb(0, 122, 204);
+  color:rgba(0, 122, 204);
 }
 
-.Emotion {
-  background: rgba(188, 69, 195, 0.6);
-  border: 1px solid rgb(188, 69, 195);
+.Emotion, .React-Spring {
+  color: rgba(188, 69, 195);
 }
 
 .Redux {
-  background: rgba(118, 74, 188, 0.6);
-  border: 1px solid rgb(118, 74, 188);
+  color: rgba(118, 74, 188);
 }
 
 .CSS {
-  background: rgba(41, 101, 241, 0.6);
-  border: 1px solid rgb(41, 101, 241);
+  color: rgba(41, 101, 241);
+}
+
+.api {
+  color: #333;
 }
 
 .jQuery {
-  background: rgba(7, 105, 173, 0.6);
-  border: 1px solid rgb(7, 105, 173);
+  color: rgba(7, 105, 173);
+}
+main {
+  display: flex;
+  position: relative;
+  flex-direction: column-reverse;
+  background: var(--parent-bg-color);
+  height: 100vh;
+}
+.cmd-line-container {
+  display: flex;
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-size: 1.5rem;
+  z-index: 1;
+}
+.path {
+  display: flex;
+  align-items: center;
+  background: var(--bg-color);
+  padding: .1rem 0 .1rem .1rem;
+}
+.cmd-line {
+  background: var(--bg-color);
+  border: none;
+  color: var(--text-color);
+  font-size: 1.5rem;
+
+}
+.cmd-line:focus {
+  outline: none;
+}
+.cmd-line::placeholder {
+  opacity: 0.5;
 }

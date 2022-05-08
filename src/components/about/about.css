@@ -1,0 +1,42 @@
+.about-container {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  background: var(--bg-color);
+  margin: auto 2rem;
+  padding: 3rem;
+  box-shadow: 1px 1px 10px;
+}
+.about-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: 1px solid;
+  border-radius: 4px;
+  padding: 1rem;
+}
+.title {
+  border-bottom: 5px solid;
+  margin-bottom: 1rem;
+}
+.about-title {
+  position: absolute;
+  top: -1.6rem;
+  left: 1rem;
+  background: var(--bg-color);
+  font-weight: normal;
+}
+.back-btn {
+  position: absolute;
+  bottom: -1rem;
+  left: 60vw;
+  background: var(--bg-color);
+}
+.back-btn:hover {
+  color: var(--border-color);
+}
+@media only screen and (max-width: 1250px)  {
+  .back-btn {
+    position: absolute;
+    left: 30vw ;
+  }
+}

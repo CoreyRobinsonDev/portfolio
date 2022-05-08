@@ -1,0 +1,86 @@
+
+.projects-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  color: var(--text-color);
+  background: var(--bg-color);
+  height: 70vh;
+  margin: auto 2rem;
+  padding: 3rem;
+  box-shadow: 1px 1px 10px;
+}
+.projects-info-wrapper {
+  position: relative;
+  border: 1px solid;
+  border-radius: 0 4px 4px 0;
+  padding: 1rem;
+  width: 100%;
+}
+.projects-title {
+  position: absolute;
+  top: -1.5rem;
+  left: 1rem;
+  font-size: 2rem;
+  background: var(--bg-color);
+  font-weight: normal;
+}
+.list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+.project-title {
+  margin: 1rem;
+}
+.gif {
+  object-fit: cover;
+  border: 1px solid;
+  border-radius: 4px;
+  width: 40vw;
+  margin-left: 1rem;
+}
+.tools {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 4px;
+  color:#333;
+}
+.description {
+  padding: 1rem;
+  border: 1px solid;
+  border-radius: 4px;
+}
+.projects-list-container {
+  border: 1px solid;
+  border-right: none;
+  border-radius: 4px 0 0 4px;
+
+}
+.projects-list-container > li {
+  border-radius: 4px;
+}
+.projects-list-container > li:hover {
+  box-shadow: 1px 1px 4px inset;
+  cursor: pointer;
+}
+.projects-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: space-between;
+  height: 55vh;
+}
+
+@media only screen and (max-width: 1250px)  {
+  .gif {
+    display: none;
+  }
+  .back-btn {
+    position: absolute;
+    left: 30vw ;
+  }
+}

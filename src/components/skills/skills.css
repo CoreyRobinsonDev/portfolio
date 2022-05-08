@@ -1,0 +1,29 @@
+
+
+.skills-container {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  background: var(--bg-color);
+  margin: auto 2rem;
+  padding: 3rem;
+  box-shadow: 1px 1px 10px;
+}
+.skills-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: 1px solid;
+  border-radius: 4px;
+  padding: 1rem;
+}
+.skills-title {
+  position: absolute;
+  top: -1.6rem;
+  left: 1rem;
+  background: var(--bg-color);
+  font-weight: normal;
+}
+.skills-categories {
+  display: flex;
+  justify-content: space-evenly;
+}

@@ -1,0 +1,45 @@
+.portfolio-container {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  background: var(--bg-color);
+  margin: auto 2rem;
+  padding: 3rem;
+  box-shadow: 1px 1px 10px;
+}
+a {
+  color: var(--text-color);
+  padding-right: 2rem;
+}
+a:hover {
+  color: var(--border-color);
+}
+.portfolio-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: 1px solid;
+  border-radius: 4px;
+  padding: 1rem;
+}
+.portfolio-title {
+  position: absolute;
+  top: -1.5rem;
+  left: 1rem;
+  font-size: 2rem;
+  background: var(--bg-color);
+  font-weight: normal;
+}
+h2 {
+  font-weight: normal;
+}
+.about:hover, .projects:hover, .contact:hover, .skills:hover {
+  cursor: pointer;
+  box-shadow: -1px 1px 4px inset;
+  width: 20rem;
+  border-radius: 4px;
+}
+.directories {
+  position: absolute;
+  bottom: 3rem;
+  left: 0;
+}
