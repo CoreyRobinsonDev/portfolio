@@ -58,7 +58,7 @@ const Projects = ({ index, style, changeComponent }) => {
 
   return <animated.section style={style} className='projects-container'>
     <ul className='projects-list-container'>
-      <span>///////////////////</span>
+      <span>{'///////////////////'}</span>
       <li onClick={() => handleClick(0)}>] /chess-openings</li>
       <li onClick={() => handleClick(1)}>] /mars-gallery</li>
       <li onClick={() => handleClick(2)}>] /reddit-minimal</li>
