@@ -15,7 +15,7 @@ const App = () => {
   const [component, setComponent] = useState(<Portfolio style={{}} changeComponent={()=>{}}></Portfolio>);
   const [isVisible, setIsVisible] = useState(false);
   const [list, setList] = useState(['']);
-  const placeholderCommands = ['cd about', 'cd projects', 'ls', 'cd skills', 'cd contact'];
+  const placeholderCommands = ['cd about', 'cd projects', 'cd skills', 'cd contact'];
 
   const transition = useTransition(isVisible, {
     from: {y: 600, opacity: 1},
