@@ -40,3 +40,28 @@
     left: 30vw ;
   }
 }
+@media only screen and (max-width: 450px)  {
+  .about-container {
+    padding: 1rem;
+  }
+  .about-title {
+    display: none;
+  }
+  .back-btn {
+    position: absolute;
+    left: 30vw ;
+    bottom: -.8rem;
+    font-size: 1.2rem;
+  }
+  .about-info-wrapper > h1 {
+    font-size: 1.3rem;
+
+  }
+  .title {
+    font-size: .9rem;
+
+  }
+  .about-info-wrapper > p {
+    font-size: 1.2rem;
+  }
+}

@@ -43,3 +43,20 @@ h2 {
   bottom: 3rem;
   left: 0;
 }
+
+@media only screen and (max-width: 850px)  {
+  .divider {
+    display: none;
+  }
+  .projects > h2, .skills > h2, .about > h2, .contact > h2{
+    font-size: 1.85rem;
+  }
+}
+@media only screen and (max-width: 450px)  {
+  .portfolio-container {
+    padding: 1rem;
+  }
+  .portfolio-title {
+    display: none;
+  }
+}

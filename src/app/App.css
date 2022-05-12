@@ -67,6 +67,7 @@ main {
 }
 .cmd-line-container {
   display: flex;
+  align-items: center;
   background: var(--bg-color);
   color: var(--text-color);
   font-size: 1.5rem;
@@ -83,7 +84,7 @@ main {
   border: none;
   color: var(--text-color);
   font-size: 1.5rem;
-
+  width: 100%;
 }
 .cmd-line:focus {
   outline: none;

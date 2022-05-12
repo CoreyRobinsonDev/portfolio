@@ -6,7 +6,7 @@ import './App.css';
 import Contact from '../components/contact/Contact';
 import About from '../components/about/About';
 import Portfolio from '../components/portfolio/Portfolio';
-import Projects from '../components/pojects/Projects';
+import Projects from '../components/projects/Projects';
 import Skills from '../components/skills/Skills';
 
 const App = () => {
@@ -29,7 +29,8 @@ const App = () => {
   
   const handleCommand = (e) => {
     e.preventDefault();
-    const commandValue = command.slice(3, command.length); 
+    let commandValue = command.slice(3, command.length); 
+    if (commandValue[0] === '/') commandValue = commandValue.slice(1);
     //define the path
     switch (commandValue) {
       case '..':
@@ -38,26 +39,14 @@ const App = () => {
       case '../..':
         setPath(path.slice(0, path.length - 2));
         break; 
-      case '/about':
-        setPath(['/portfolio', '/about']);
-        break;
       case 'about':
         setPath(['/portfolio', '/about']);
         break;
       case 'skills':
         setPath(['/portfolio', '/skills']);
         break;
-      case '/skills':
-        setPath(['/portfolio', '/skills']);
-        break;
       case 'contact':
         setPath(['/portfolio', '/contact']);
-        break;
-      case '/contact':
-        setPath(['/portfolio', '/contact']);
-        break;
-      case '/portfolio':
-        setPath(['/portfolio']);
         break;
       case 'portfolio':
         setPath(['/portfolio']);
@@ -65,61 +54,34 @@ const App = () => {
       case 'projects':
         setPath(['/portfolio', '/projects']);
         break;
-      case '/projects':
-        setPath(['/portfolio', '/projects']);
-        break;
       case 'chess-openings':
-        if (path[path.length-1] === '/projects') setPath(['/portfolio', '/projects', '/chess-openings']);
-        break;
-      case '/chess-openings':
         if (path[path.length-1] === '/projects') setPath(['/portfolio', '/projects', '/chess-openings']);
         break;
       case 'mars-gallery':
         if (path[path.length-1] === '/projects') setPath(['/portfolio', '/projects', '/mars-gallery']);
         break;
-      case '/mars-gallery':
-        if (path[path.length-1] === '/projects') setPath(['/portfolio', '/projects', '/mars-gallery']);
-        break;
       case 'reddit-minimal':
         if (path[path.length-1] === '/projects') setPath(['/portfolio', '/projects', '/reddit-minimal']);
-        break;
-      case '/reddit-minimal':
-        if (path[path.length - 1] === '/projects') setPath(['/portfolio', '/projects', '/reddit-minimal']);
         break;
       case 'portfolio-site':
           if (path[path.length-1] === '/projects') setPath(['/portfolio', '/projects', '/portfolio-site']);
           break;
-      case '/portfolio-site':
-        if (path[path.length-1] === '/projects') setPath(['/portfolio', '/projects', '/portfolio-site']);
-        break;
       case 'projects/chess-openings':
-        setPath(['/portfolio', '/projects', '/chess-openings']);
-        break;
-      case '/projects/chess-openings':
         setPath(['/portfolio', '/projects', '/chess-openings']);
         break;
       case 'projects/mars-gallery':
         setPath(['/portfolio', '/projects', '/mars-gallery']);
         break;
-      case '/projects/mars-gallery':
-        setPath(['/portfolio', '/projects', '/mars-gallery']);
-        break;
       case 'projects/reddit-minimal':
-        setPath(['/portfolio', '/projects', '/reddit-minimal']);
-        break;
-      case '/projects/reddit-minimal':
         setPath(['/portfolio', '/projects', '/reddit-minimal']);
         break;
       case 'projects/portfolio-site':
         setPath(['/portfolio', '/projects', '/portfolio-site']);
         break;
-      case '/projects/portfolio-site':
-        setPath(['/portfolio', '/projects', '/portfolio-site']);
-        break;
       default:
         if (command.slice(0, 2) === 'ls') {
           setList(['/projects', '/skills', '/about', '/contact'])
-        } else if (command.slice(0, 3) === 'clr' || command.slice(0, 5) === 'clear') {
+        } else if (command.slice(0, 5) === 'clear') {
           setList(['']);
           setComponent('');
         } else {

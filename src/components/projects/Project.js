@@ -9,15 +9,17 @@ const Project = ({ style, data, index, changeComponent }) => {
 
       <div className='projects-info'>
         <div className='list-item'>
-          <h2 className='project-title'>[ {data[index].name} ]</h2>
-          <a rel="noreferrer" href={data[index].site} target='_blank'>=>Site</a>
-          <a rel="noreferrer" href={data[index].code} target='_blank'>=>Code</a>
+        <h2 className='project-title'>[ {data[index].name} ]</h2>
+        <div>
+          <a rel="noreferrer" href={data[index].site} target='_blank'>{'=>>'}Site</a>
+          <a rel="noreferrer" href={data[index].code} target='_blank'>{'=>>'}Code</a>
+        </div>
           <ul className='tools'>
           {
             data[index].tools.map((tool, key) => <li key={key} className={tool} >{tool}</li>)
             }
           </ul>
-        <p className='description'>{data[index].description}</p>
+         <p className='description'>{data[index].description}</p>
         </div>
           <embed src={data[index].gif} className='gif'></embed>
       </div>

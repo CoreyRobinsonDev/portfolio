@@ -27,3 +27,17 @@
   display: flex;
   justify-content: space-evenly;
 }
+@media only screen and (max-width: 850px)  {
+  .skills-categories {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 450px)  {
+  .skills-container {
+    padding: 1rem;
+  }
+  .skills-title {
+    display: none;
+  }
+}
