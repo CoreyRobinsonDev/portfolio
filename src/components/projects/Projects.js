@@ -7,6 +7,14 @@ import Project from './Project';
 
 export const projectData = [
   {
+    name: 'Stonks',
+    gif: 'gifs/ezgif.com-gif-maker (5).gif',
+    site: 'https://stonks-crd.netlify.app/',
+    code: 'https://github.com/CoreyRobinsonDev/stonks',
+    tools: ['React', 'Redux', 'NodeJS', 'Typscript', 'PassportJS', 'Polygon API'],
+    description: 'Simple brokerage site where stocks can be bought and sold.'
+  },
+  {
     name: 'Chess Openings',
     gif: 'gifs/ezgif.com-gif-maker (2).gif',
     site: 'https://chess-openings-crd.netlify.app/',
@@ -29,14 +37,6 @@ export const projectData = [
     code: 'https://github.com/CoreyRobinsonDev/reddit-client',
     tools: ['React', 'Redux', 'jQuery', 'CSS'],
     description: 'A minimalistic take on the popular social media site Reddit, utilizing their api. Codeacademy portfolio project.'
-  },
-  {
-    name: 'Portfolio Site',
-    gif: 'gifs/ezgif.com-gif-maker (3).gif',
-    site: 'https://corey-robinson.dev/',
-    code: 'https://github.com/CoreyRobinsonDev/portfolio',
-    tools: ['React', 'CSS', "React-Spring"],
-    description: 'A simple portfolio site.'
   }
 ]
 

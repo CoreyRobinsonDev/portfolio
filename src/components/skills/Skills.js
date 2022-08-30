@@ -32,6 +32,9 @@ const Skills = ({style, changeComponent}) => {
             <li>{'>'}Nodejs</li>
             <li>{'>>>'}Expressjs</li>
             <li>{'>'}MongoDB</li>
+            <li>{'>'}SQLite</li>
+            <li>{'>'}Python</li>
+            <li>{'>>>'}Flask</li>
 
           </ul>
         </div>
