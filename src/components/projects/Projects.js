@@ -11,7 +11,7 @@ export const projectData = [
     gif: 'gifs/ezgif.com-gif-maker (5).gif',
     site: 'https://stonks-crd.netlify.app/',
     code: 'https://github.com/CoreyRobinsonDev/stonks',
-    tools: ['React', 'Typscript', 'NodeJS', 'PassportJS'],
+    tools: ['React', 'TypeScript', 'NodeJS', 'PassportJS'],
     description: 'Simple brokerage site where stocks can be bought and sold.'
   },
   {
