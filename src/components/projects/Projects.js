@@ -11,7 +11,7 @@ export const projectData = [
     gif: 'gifs/ezgif.com-gif-maker (5).gif',
     site: 'https://stonks-crd.netlify.app/',
     code: 'https://github.com/CoreyRobinsonDev/stonks',
-    tools: ['React', 'Redux', 'NodeJS', 'Typscript', 'PassportJS', 'Polygon API'],
+    tools: ['React', 'Typscript', 'NodeJS', 'PassportJS'],
     description: 'Simple brokerage site where stocks can be bought and sold.'
   },
   {
@@ -59,10 +59,10 @@ const Projects = ({ index, style, changeComponent }) => {
   return <animated.section style={style} className='projects-container'>
     <ul className='projects-list-container'>
       <span className='divider'>{'///////////////////'}</span>
-      <li onClick={() => handleClick(0)}>] /chess-openings</li>
-      <li onClick={() => handleClick(1)}>] /mars-gallery</li>
-      <li onClick={() => handleClick(2)}>] /reddit-minimal</li>
-      <li onClick={() => handleClick(3)}>] /portfolio-site</li>
+      <li onClick={() => handleClick(0)}>] /stonks</li>
+      <li onClick={() => handleClick(1)}>] /chess-openings</li>
+      <li onClick={() => handleClick(2)}>] /mars-gallery</li>
+      <li onClick={() => handleClick(3)}>] /reddit-minimal</li>
     </ul>
     <div className='projects-info-wrapper'>
       <h3 className='projects-title'>Projects</h3>
